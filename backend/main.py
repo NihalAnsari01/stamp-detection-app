@@ -15,7 +15,8 @@ import threading
 
 app = FastAPI()
 
-app.mount("/frontend", StaticFiles(directory="frontend"), name="frontend")
+app.mount("/frontend", StaticFiles(directory="/app/frontend"), name="frontend")
+
 
 
 # Enable CORS
