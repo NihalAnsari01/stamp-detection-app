@@ -3,7 +3,9 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
 from PIL import Image
 from io import BytesIO
-from model import detect_objects
+
+from backend.model import detect_objects
+
 import cv2
 import threading
 
