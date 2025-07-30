@@ -4,7 +4,8 @@ from fastapi.responses import StreamingResponse
 from PIL import Image
 from io import BytesIO
 
-from backend.model import detect_objects
+from .model import detect_objects
+
 
 import cv2
 import threading
