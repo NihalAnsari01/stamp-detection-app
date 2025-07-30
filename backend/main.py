@@ -6,11 +6,17 @@ from io import BytesIO
 
 from .model import detect_objects
 
+from fastapi.staticfiles import StaticFiles
+import os
+
 
 import cv2
 import threading
 
 app = FastAPI()
+
+app.mount("/frontend", StaticFiles(directory="frontend"), name="frontend")
+
 
 # Enable CORS
 app.add_middleware(
