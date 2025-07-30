@@ -89,3 +89,11 @@ def stop_video():
             camera.release()
             camera = None
     return {"status": "Camera stopped"}
+
+
+if __name__ == "__main__":
+    import os
+    import uvicorn
+
+    port = int(os.environ.get("PORT", 8000))  # Use 8000 as fallback locally
+    uvicorn.run("main:app", host="0.0.0.0", port=port)
