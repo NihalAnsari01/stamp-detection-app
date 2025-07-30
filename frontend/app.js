@@ -12,7 +12,7 @@ function pollDetections() {
 function startVideo() {
   const video = document.getElementById("videoFeed");
   try {
-    video.src = "http://127.0.0.1:8000/video_feed";
+    video.src = "/video_feed";
     video.style.display = "block";
 
     if (!pollingInterval) {
@@ -35,7 +35,7 @@ function stopVideo() {
     pollingInterval = null;
   }
 
-  fetch("http://127.0.0.1:8000/stop_video")
+  fetch("/stop_video")
     .then(() => {
       console.log("Camera stopped successfully.");
     })
