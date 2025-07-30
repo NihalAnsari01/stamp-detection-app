@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['0']
+
+roboflow:
+  workspace: shujing-liang
+  project: stamp-detection-f3yka
+  version: 4
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/shujing-liang/stamp-detection-f3yka/dataset/4

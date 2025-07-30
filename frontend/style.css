@@ -1,0 +1,84 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 2.5em;
+}
+
+.card {
+  background-color: #1e1e1e;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  padding: 20px;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.card h2 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  color: #0af;
+}
+
+#videoFeed {
+  width: 100%;
+  max-height: 480px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid #444;
+  display: none;
+}
+
+.btn-group {
+  margin-top: 15px;
+  
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #0af;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 0 10px;
+  
+}
+
+.result-box {
+  background: #222;
+  padding: 15px;
+  border-radius: 10px;
+  max-height: 400px;
+  overflow-y: auto;
+  margin-top: 15px;
+  border: 1px solid #333;
+}
+
+.result-item {
+  padding: 10px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #444;
+  font-family: monospace;
+  font-size: 0.95em;
+}
