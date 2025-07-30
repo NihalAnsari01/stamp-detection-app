@@ -11,6 +11,9 @@ COPY backend /app/backend
 COPY weights /app/weights
 COPY requirements.txt /app
 
+COPY frontend /app/frontend
+
+
 # Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
